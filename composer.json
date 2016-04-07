@@ -1,0 +1,10 @@
+{
+    "name": "ofertix/sim-php-library",
+    "authors": [
+        {
+            "name": "ofertix",
+            "email": "it.ofertix@gmail.com"
+        }
+    ],
+    "require": {}
+}
