@@ -2,13 +2,6 @@
 namespace SimClient;
 
 /**
- * @file
- * Implements the Selligent Individual API.
- */
-
-require_once('SimProxy.class.php');
-
-/**
  * This class is used to query the Selligent Individual API.
  * Set the properties for your query and execute the API function you need.
  */

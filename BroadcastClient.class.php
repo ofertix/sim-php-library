@@ -1,12 +1,6 @@
 <?php
 namespace SimClient;
 
-/**
- * @file
- * Broadcast client implementation for Selligent.
- */
-require_once('SimProxy.class.php');
-
 class BroadcastClient extends SimProxy {
 
   private $xml = '';
