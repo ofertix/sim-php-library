@@ -1,5 +1,5 @@
 <?php
-namespace SimClient;
+namespace Ofertix\SimClient;
 
 /**
  * This class is used to query the Selligent Individual API.

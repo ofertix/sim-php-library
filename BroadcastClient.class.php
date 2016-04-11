@@ -1,5 +1,5 @@
 <?php
-namespace SimClient;
+namespace Ofertix\SimClient;
 
 class BroadcastClient extends SimProxy {
 
