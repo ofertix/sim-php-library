@@ -314,6 +314,20 @@ class IndividualClient extends SimProxy{
     return $result;
   }
 
+  public function triggerCampaignForUserAndActionListItem($actionListID, $actioncode) {
+    if ($this->lid == '' || $this->gate == '' || $this->uid == '' || sizeof($this->properties) == 0) throw new \Exception('Not all properties are set for this method.');
+
+    $input['ListID'] = $this->lid;
+    $input['UserID'] = $this->uid;
+    $input['GateName'] = $this->gate;
+    $input['ActionListID'] = $actionListID;
+    $input['ActionCode'] = $actioncode;
+    $input['ActionListItemData'] = $this->properties;
+
+    return $this->call('TriggerCampaignForUserAndActionListItem', $input);
+  }
+
+
   /**
    * @return string the current system status
    */

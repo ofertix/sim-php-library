@@ -37,7 +37,7 @@ class BroadcastClient extends SimProxy {
     $input = array();
     $input['Xml'] = $this->xml;
 
-    $result = $this->call('CreateCampaign', $xml);
+    $result = $this->call('CreateCampaign', $input);
     return $result;
   }
 
@@ -69,7 +69,7 @@ class BroadcastClient extends SimProxy {
     $input = array();
     $input['xml'] = $this->xml;
 
-    $result = $this->call('ProcessUserData', $xml);
+    $result = $this->call('ProcessUserData', $input);
     return $result;
   }
 }
