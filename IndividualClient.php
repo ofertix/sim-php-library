@@ -143,7 +143,7 @@ class IndividualClient extends SimProxy{
     if (isset($result->ErrorStr) && $result->GetUserByFilterResult == 10005) {
       return array();
     } else {
-      if ($result->ResultSet)
+      if (!empty($result->ResultSet))
         return $this->fetchUserResultSet($result->ResultSet->Property);
     }
   }
